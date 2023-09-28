@@ -19,5 +19,10 @@ stage('Deploy') {
    sh 'echo "Deploying the application"'
    }
   }
+  stage('Interactive input') {
+    steps {
+     input 'hello'
+    }
+  }
  }
 }
